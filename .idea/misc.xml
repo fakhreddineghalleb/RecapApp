@@ -4,13 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/FGH/AndroidStudioProjects/RecapApp/app/src/main/res/layout/activity_home.xml" value="0.176" />
-        <entry key="..\:/Users/FGH/AndroidStudioProjects/RecapApp/app/src/main/res/layout/activity_login.xml" value="0.176" />
+        <entry key="..\:/Users/FGH/AndroidStudioProjects/RecapApp/app/src/main/res/layout/activity_login.xml" value="0.4" />
         <entry key="..\:/Users/FGH/AndroidStudioProjects/RecapApp/app/src/main/res/layout/activity_main.xml" value="0.13229166666666667" />
         <entry key="..\:/Users/FGH/AndroidStudioProjects/RecapApp/app/src/main/res/layout/activity_sign_up.xml" value="0.16799999999999998" />
         <entry key="..\:/Users/FGH/AndroidStudioProjects/RecapApp/app/src/main/res/layout/fragment_one.xml" value="0.152" />
         <entry key="..\:/Users/FGH/AndroidStudioProjects/RecapApp/app/src/main/res/layout/fragment_three.xml" value="0.13229166666666667" />
         <entry key="..\:/Users/FGH/AndroidStudioProjects/RecapApp/app/src/main/res/layout/fragment_two.xml" value="0.136" />
         <entry key="..\:/Users/FGH/AndroidStudioProjects/RecapApp/app/src/main/res/layout/single_country_row.xml" value="0.176" />
+        <entry key="..\:/Users/FGH/AndroidStudioProjects/RecapApp/app/src/main/res/layout/single_user_row.xml" value="0.2" />
       </map>
     </option>
   </component>

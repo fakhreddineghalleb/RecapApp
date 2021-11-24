@@ -3,7 +3,9 @@ package tn.esprit.recapapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -16,6 +18,8 @@ public class HomeActivity extends AppCompatActivity {
     private TextView tvLastFirstName, tvEmail, tvPhoneNumber;
     private Button btnFrag1, btnFrag2, btnFrag3;
 
+    private SharedPreferences mSharedPref;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,9 +28,22 @@ public class HomeActivity extends AppCompatActivity {
         tvLastFirstName = findViewById(R.id.tvLastFirstName);
         tvEmail = findViewById(R.id.tvEmail);
         tvPhoneNumber = findViewById(R.id.tvPhoneNumber);
+
         btnFrag1 = findViewById(R.id.btnFrag1);
         btnFrag2 = findViewById(R.id.btnFrag2);
         btnFrag3 = findViewById(R.id.btnFrag3);
+
+        mSharedPref = getSharedPreferences(LoginActivity.sharedPrefFileName, MODE_PRIVATE);
+
+        String name = mSharedPref.getString("FIRSTNAME","") + " "
+                + mSharedPref.getString("LASTNAME","");
+
+        tvLastFirstName.setText(name);
+        tvEmail.setText(mSharedPref.getString("LOGIN",""));
+
+        Log.e("user signedIn", mSharedPref.getInt("PHONENUMBER",0)+"");
+
+        tvPhoneNumber.setText(String.valueOf(mSharedPref.getInt("PHONENUMBER",0)));
 
         btnFrag1.setOnClickListener(view -> {
             changeFragment(new FragOne(), "");
